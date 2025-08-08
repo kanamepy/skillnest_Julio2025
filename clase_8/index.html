@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Tiempo Local</title>
+</head>
+<body>
+    <header>
+        <h1> Tiempo Local</h1>
+        <ul>
+            <li> <a href="#">Buenos Aires</a> </li>
+            <li> <a href="#">Ciudad de Mexico </a></li>
+            <li> <a href="#">Santiago</a></li>
+            <li> <a href="#">Sao Paolo</a></li>
+            <li> <a href="#">Quito </a></li>
+        </ul>
+        <p> <class="temperature-select">
+      <label>Mostrar temperatura en </label>
+      <select>
+        <option>°C</option>
+        <option>°F</option>
+      </select>
+     </p>
+    </header>
+    <div id="contenedor">
+        <div id="bloque" ></div>
+            <div>img</div>
+            <div>Hoy</div>
+            <div>Nublado</div>
+            <div>22 °C/ 15°C</div>
+         </div>
+          <div id="bloque" ></div>
+            <div>img</div>
+            <div>Hoy</div>
+            <div>Nublado</div>
+            <div>22 °C/ 15°C</div>
+         </div>
+          <div id="bloque" ></div>
+            <div>img</div>
+            <div>Hoy</div>
+            <div>Nublado</div>
+            <div>22 °C/ 15°C</div>
+         </div>
+          <div id="bloque" ></div>
+            <div>img</div>
+            <div>Hoy</div>
+            <div>Nublado</div>
+            <div>22 °C/ 15°C</div>
+         </div>
+    </div>
+
+</body>
+</html>
+
+
+<style>
+    /* Bloque de ciudad */
+    .ciudad-actual {
+      text-align: center;
+      font-size: 28px;
+      margin: 30px 0 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Contenedor de tarjetas */
+    .tarjetas-clima {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    /* Tarjeta individual */
+    .tarjeta {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 120px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .tarjeta img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .tarjeta p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .temperaturas {
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ciudad -->
+  <div class="ciudad-actual">Buenos Aires</div>
+
+  <!-- Tarjetas -->
+  <div class="tarjetas-clima">
+    <div class="tarjeta">
+      <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Nublado">
+      <h3>Hoy</h3>
+      <p>Nublado</p>
+      <p class="temperaturas">22°C 15°C</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="https://cdn-icons-png.flaticon.com/512/1163/1163634.png" alt="Lluvioso">
+      <h3>Mañana</h3>
+      <p>Lluvioso</p>
+      <p class="temperaturas">20°C 13°C</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="https://cdn-icons-png.flaticon.com/512/1146/1146860.png" alt="Tormenta">
+      <h3>Miércoles</h3>
+      <p>Tormentas</p>
+      <p class="temperaturas">18°C 11°C</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Parcialmente nublado">
+      <h3>Jueves</h3>
+      <p>Parcialmente nublado</p>
+      <p class="temperaturas">21°C 14°C</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Soleado">
+      <h3>Viernes</h3>
+      <p>Soleado</p>
+      <p class="temperaturas">24°C 17°C</p>
+    </div>
+  </div>

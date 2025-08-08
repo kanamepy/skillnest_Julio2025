@@ -1,0 +1,28 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.celda {
+    border: 2px black solid;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.col {
+    background-color: blueviolet;   
+}
+
+.row {
+    
+    /*line-height: 0; saca el espacio en el vertical*/
+    font-size:0; /*saco espacio entre los elementos*/
+}
+
+.cat {
+    background-image: url('./img-pac-cat/gato.gif');
+    background-size:contain; 
+}
+.burguer{
+    background-image: url('./img-pac-cat/burguer.png');
+    background-size:contain; 
+}
