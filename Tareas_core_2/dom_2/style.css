@@ -1,0 +1,83 @@
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        color: #222;
+      }
+      .header-network {
+        background: #333;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      /* Contenedor flex para aside + feed */
+      .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 16px;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start; /* alinea arriba */
+      }
+
+      .aside-perfil {
+        width: 240px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        margin-top: 136px;
+      }
+      .logo-perfil {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background: #eee;
+        display: block;
+        margin: 0 auto;
+      }
+      .name-perfil {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .feed {
+        flex: 1;
+      }
+      .feed h2 {
+        margin-top: 0;
+      }
+
+      .posteo {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 14px;
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .likes {
+        margin-right: 10px;
+      }
+      .like-button {
+        background: #ffd300;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+
+      /* Responsive simple */
+      @media (max-width: 800px) {
+        .container {
+          flex-direction: column;
+        }
+    }

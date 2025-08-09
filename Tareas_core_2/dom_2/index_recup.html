@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="script.js"></script>
+    <title>Network Me gusta</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        color: #222;
+      }
+      .header-network {
+        background: #333;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      
+    
+      .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 16px;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start; 
+      }
+
+      .aside-perfil {
+        width: 240px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        margin-top: 136px;
+      }
+      .logo-perfil {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background: #eee;
+        display: block;
+        margin: 0 auto;
+      }
+      .name-perfil {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      /*order para no usar negat*/
+      .container {
+        flex: 1; 
+      }
+      .container h2 {
+        margin-top: 0;
+      }
+
+      .posteo {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 14px;
+        margin-bottom: 14px;
+        display: flex
+;
+    justify-content: space-around;
+      }
+      .likes {
+        margin-right: 10px;
+      }
+      .like-button {
+        background: #ffd300;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* Responsive simple: pila vertical */
+      @media (max-width: 800px) {
+        .container {
+          flex-direction: column;
+        }
+        .aside-perfil {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-network">Network</div>
+
+    <div class="container">
+      <aside class="aside-perfil">
+        <img
+          class="logo-perfil"
+          src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/user.svg"
+          alt="logo-perfil"
+        />
+        <div class="name-perfil">Adrien Desplatz</div>
+      </aside>
+
+      <main class="container">
+        <h2>Your Feed</h2>
+
+        <div class="posteo">
+          <strong>Linn O.</strong>
+          <p>
+            Acabo de configurar este nuevo bot de Discord. <a href="#">link</a>
+          </p>
+          <span class="likes">0 like(s)</span>
+          <button class="like-button">Like</button>
+        </div>
+
+        <div class="posteo">
+          <strong>Lina K.</strong>
+          <p>Acabo de terminar este <a href="#">nuevo comic</a>.</p>
+          <span class="likes">0 like(s)</span>
+          <button class="like-button">Like</button>
+        </div>
+
+        <div class="posteo">
+          <strong>Mateo H.</strong>
+          <p>No puedo dejar de escuchar este <a href="#">album</a>.</p>
+          <span class="likes">0 like(s)</span>
+          <button class="like-button">Like</button>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // Si querés activar los "likes", descomentá esto:
+      // document.querySelectorAll(".like-button").forEach(boton => {
+      //   boton.addEventListener("click", () => {
+      //     const post = boton.closest(".posteo");
+      //     const spanLikes = post.querySelector(".likes");
+      //     let n = parseInt(spanLikes.textContent) || 0;
+      //     spanLikes.textContent = `${++n} like(s)`;
+      //   });
+      // });
+    </script>
+  </body>
+</html>

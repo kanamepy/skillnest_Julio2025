@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="style.css" /-->
+    <title>Diseño imagenes</title>
+</head>
+<body>
+    <h1>Proyecto Imágenes</h1>
+    <div class="container">
+        <div class="container-top">
+            <div class="div-top"><img src="imagenes/1.webp" alt="gatito 1"></div>
+            <div class="div-top"><img src="imagenes/2.webp" alt="gatito 2"></div>
+            <div class="div-top"><img src="imagenes/3.webp" alt="gatito 3"></div>
+        </div>
+        <div class="container-center">
+            <div class="div-center"><img src="imagenes/4.webp" alt="gatito 4"></div>
+            <div class="div-center"><img src="imagenes/5.webp" alt="gatito 5"></div>
+            
+        </div>
+        
+        <div class="container-button">
+            <div class="div-buttom"><img src="imagenes/6.webp" alt="gatito 6"></div>
+            <div class="div-buttom"><img src="imagenes/7.gif" alt="gatito 7"></div>
+            <div class="div-buttom"><img src="imagenes/8.webp" alt="gatito 8"></div>
+        </div>
+    </div>
+    <div class="div-image"><p>Imágenes sacadas de Internet</p></div>
+<style>
+    * {
+  margin: 0px;
+  padding: 0px;
+}
+.body {
+  background-color: 255, 255 255;
+}
+h1 {
+  text-align: center;
+}
+
+
+.container {
+  background-color: antiquewhite;
+  height: 60%;
+  width: auto;
+  padding: 20px;
+  margin: 20px 20px 0px 0px;
+}
+
+.container-top {
+  background-color: #ffcc00;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30%;
+  width: auto;
+}
+
+.container-center {
+  background-color: #66ccff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30%;
+  width: auto;
+}
+
+.container-button {
+  background-color: #ff6666;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30%;
+  width: auto;
+}
+
+
+.div-top .div-buttom {
+  height: 300px;
+  width: auto;
+}
+
+.div-center {
+  height: 300px;
+  width: auto;
+  justify-content: space-around;
+}
+
+img {
+  width: auto;
+  height: 200px;
+  transform: scale(0.9); /* 90% del tamaño original */
+}
+
+
+.div-image {
+  background-color: #99ff99;
+  text-align: center;
+  font-size:large;
+  font-weight: bold;
+  height: 30%;
+  width: auto;
+  margin: 0px 20px 20px 0px;
+}
+
+</style>
+</body>
+</html>

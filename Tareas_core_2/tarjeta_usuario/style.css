@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .banner {
+    background: #00BCD4;
+    height: 100px;
+    
+  }
+  .banner .logo-empresa {
+    height: 60px;
+    object-fit: contain;
+    
+  }
+  .perfil-contenido {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .logo-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -50px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+  }
+  p,h1,h2 {
+    text-align: start;
+  }
+  h2 {
+    margin: 10px 0 5px;    
+  }
+
+  p {
+    margin: 5px 0;
+    color: #555;
+    justify-content: column;
+  }
+
+  .button-editar {
+    background: #eee;
+    border: none;
+    padding: 8px 16px;
+    margin: 15px 0 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button-editar:hover {
+    background: #ddd;
+  }
+/*
+.logo-perfil h1 p h2{
+    display: flex;
+    align-items:self-start
+}*/

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Petlopedia</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 16px;
+        background: #d3d3d3;
+      }
+      .logo-texto {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .contenedor-formulario {
+        display: flex;
+        flex: 1;
+        gap: 8px;
+        align-items: center;
+      }
+      .search-buscador {
+        flex: 1;
+      }
+      .search-buscador input {
+        width: 100%;
+        padding: 6px 10px;
+        border: 1px solid #bbb;
+      }
+      #button-azul {
+        background-color: #1e90ff;
+        color: #fff;
+        border: 1px solid #166abc;
+        padding: 6px 12px;
+        cursor: pointer;
+      }
+
+      .container-block {
+        display: flex;
+        gap: 16px;
+        padding: 16px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .columna-izquierda {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .block-text {
+        background: #fff;
+        border: 1px solid #000;
+        padding: 12px;
+      }
+      .block-lateral {
+        background: #fff;
+        border: 1px solid #000;
+        padding: 12px;
+        width: 300px;
+        height: fit-content;
+      }
+
+      #button-block {
+        background: #ffffcc; /* amarillo verdoso */
+        border: 1px solid #888;
+        padding: 3px 8px;
+        cursor: pointer;
+      }
+      #button-verde {
+        background: #008000;
+        color: white;
+        border: 1px solid black;
+        padding: 6px 10px;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Responsive */
+      @media (max-width: 800px) {
+        .container-block {
+          flex-direction: column;
+        }
+        .block-lateral {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-texto">Petlopedia</div>
+      <div class="contenedor-formulario">
+        <form class="search-buscador" role="search">
+          <input type="search" placeholder="Buscar mascotas" />
+        </form>
+        <button id="button-azul" type="button">Iniciar sesión</button>
+      </div>
+    </header>
+
+    <div class="container-block">
+      <div class="columna-izquierda">
+        <div class="block-text">
+          <h2>Gato Atigrado</h2>
+          <p><em>sustantivo</em></p>
+          <p><strong>Plural:</strong> Gatos Atigrados</p>
+          <p>
+            Un gato con un <strong>pelaje distintivo</strong> que presenta
+            rayas, puntos o patrones en remolino, usualmente con una marca en
+            forma de “M” en su frente.
+          </p>
+          <button id="button-block" type="button">22 me gusta</button>
+        </div>
+
+        <div class="block-text">
+          <h2>Golden Retriever</h2>
+          <p><em>sustantivo</em></p>
+          <p><strong>Plural:</strong> Golden Retrievers</p>
+          <p>
+            Una raza de perro amistosa, inteligente y devota, conocida por su
+            pelaje dorado y su habilidad para recuperar objetos sin dañarlos.
+          </p>
+          <button id="button-block" type="button">45 me gusta</button>
+        </div>
+      </div>
+
+      <div class="block-lateral">
+        <h2>Petlopedia está definida por TI</h2>
+        <button id="button-verde">Agregar Definición</button>
+      </div>
+    </div>
+    <script>
+      document.getElementById("button-azul").onclick = function () {
+        alert("¡Iniciaste sesión!");
+        toggleSesion();
+      };
+
+      function toggleSesion() {
+        const boton = document.getElementById("button-azul");
+        if (boton.textContent === "Iniciar sesión") {
+          boton.textContent = "Cerrar sesión";
+        } else {
+          boton.textContent = "Iniciar sesión";
+        }
+      }
+    </script>
+  </body>
+</html>
